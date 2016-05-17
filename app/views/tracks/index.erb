@@ -1,0 +1,13 @@
+<a href="/">Go to Homepage</a>:
+<a href="/tracks/new">New Track</a>
+
+<% @tracks.each do |track| %>
+  <div class="track">
+    <h3><%= track.song %>
+      <small>by: <%= track.artist %></small>
+    </h3>
+    <p>
+      URL: <%= track.url %>
+    </p>
+  </div>
+<% end %>
